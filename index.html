@@ -8,7 +8,18 @@
       content="個人作品集 — 前端開發與 UI 設計"
     />
     <title>蔡侑穎 | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -98,6 +109,24 @@
               <span class="stat-label">可及性優先</span>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section id="map" class="section section-map">
+        <div class="container">
+          <header class="section-header section-header--center reveal">
+            <p class="section-label">Location</p>
+            <h2>所在地</h2>
+            <p class="section-lead">
+              目前座標落在台北 101 一帶，歡迎線上或線下與我聯繫。
+            </p>
+          </header>
+          <div
+            id="site-map"
+            class="map-container reveal"
+            role="application"
+            aria-label="互動式地圖，顯示台北 101 位置"
+          ></div>
         </div>
       </section>
 
